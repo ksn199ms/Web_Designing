@@ -40,23 +40,26 @@
         <div class="right-section">
             <h1>Create an account</h1>
             <p class="para2" >it's quick and easy.</p>
+
+            <form class="signup-controls" id="signup-form">
             <div class="first-form">
                 <div class="first-name">
-                    <input type="text" placeholder="First name">
+                    <input name="fname" type="text" placeholder="First name">
                 </div>
                 <div class="second-name">
-                    <input type="text" placeholder="Second name">
+                    <input name="sname" type="text" placeholder="Second name">
                 </div>
             </div>
                 <div class="ph-em">
-                    <input type="text" placeholder="Mobile number or email address">
+                    <input name="emailAddress" type="text" placeholder="Mobile number or email address">
                 </div>
                 <div class="Password">
-                    <form class="fpass">
-                        <input type="text" placeholder="New Password">
-                    </form>    
+                    <div class="fpass">
+                        <input name="Password" type="text" placeholder="New Password">
+                    </div>    
                 </div>      
         </div>
+    </form>
         <h4 class="dob">Birthday</h4>
         <input class="date" type="date" name="" id="">
         <form>
@@ -70,5 +73,9 @@
             <h3 class="lasthead"><a class="under" href="page.html">Create a Page</a> for a celebrity, band or business</h3>
         </form>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
